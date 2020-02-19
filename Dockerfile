@@ -1,5 +1,4 @@
-FROM rabbitmq:latest
+FROM rabbitmq:3-management
 LABEL maintainer="Rohit Basu <rohitbasu77@gmail.com>"
-LABEL description="RabbitMQ on port 5672"
-WORKDIR /usr/lib/rabbitmq/plugins
-EXPOSE 5672
+LABEL description="RabbitMQ on port 5672 and managment on 15672"
+EXPOSE 5672 15672
